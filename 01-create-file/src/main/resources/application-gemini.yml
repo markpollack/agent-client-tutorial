@@ -1,0 +1,7 @@
+# Gemini CLI — requires: GOOGLE_API_KEY or GEMINI_API_KEY env var
+spring:
+  ai:
+    agents:
+      gemini:
+        model: gemini-2.5-flash
+        timeout: PT2M

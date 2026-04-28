@@ -1,0 +1,7 @@
+# Claude Code — requires: claude auth login
+spring:
+  ai:
+    agents:
+      claude-code:
+        model: claude-sonnet-4-20250514
+        timeout: PT2M
