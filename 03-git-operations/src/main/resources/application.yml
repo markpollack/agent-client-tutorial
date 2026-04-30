@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: claude
+  main:
+    web-application-type: none
+  ai:
+    agents:
+      mode: strict    # Git operations — STRICT mode is appropriate here
