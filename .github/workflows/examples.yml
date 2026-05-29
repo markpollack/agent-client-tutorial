@@ -18,7 +18,7 @@ concurrency:
 
 jobs:
   build:
-    if: github.repository_owner == 'spring-ai-community'
+    if: github.repository_owner == 'markpollack'
     runs-on: ubuntu-latest
     timeout-minutes: 20
 

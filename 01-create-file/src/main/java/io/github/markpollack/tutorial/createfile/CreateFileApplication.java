@@ -1,13 +1,13 @@
-package org.springaicommunity.agents.tutorial.gitops;
+package io.github.markpollack.tutorial.createfile;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GitOpsApplication {
+public class CreateFileApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GitOpsApplication.class, args);
+		SpringApplication.run(CreateFileApplication.class, args);
 	}
 
 }

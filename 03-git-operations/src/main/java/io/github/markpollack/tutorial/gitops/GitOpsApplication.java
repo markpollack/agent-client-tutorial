@@ -1,13 +1,13 @@
-package org.springaicommunity.agents.tutorial.readtransform;
+package io.github.markpollack.tutorial.gitops;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ReadTransformApplication {
+public class GitOpsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ReadTransformApplication.class, args);
+		SpringApplication.run(GitOpsApplication.class, args);
 	}
 
 }

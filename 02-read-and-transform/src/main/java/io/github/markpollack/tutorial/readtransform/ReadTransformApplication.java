@@ -1,13 +1,13 @@
-package org.springaicommunity.agents.tutorial.createfile;
+package io.github.markpollack.tutorial.readtransform;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CreateFileApplication {
+public class ReadTransformApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CreateFileApplication.class, args);
+		SpringApplication.run(ReadTransformApplication.class, args);
 	}
 
 }

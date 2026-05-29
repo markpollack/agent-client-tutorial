@@ -1,4 +1,4 @@
-package org.springaicommunity.agents.tutorial.createfile;
+package io.github.markpollack.tutorial.createfile;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -6,8 +6,8 @@ import java.nio.file.Path;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springaicommunity.agents.client.AgentClient;
-import org.springaicommunity.agents.client.AgentClientResponse;
+import io.github.markpollack.client.AgentClient;
+import io.github.markpollack.client.AgentClientResponse;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 

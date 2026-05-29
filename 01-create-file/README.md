@@ -2,13 +2,9 @@
 
 The simplest possible AgentClient task — create a file — demonstrated with all three providers.
 
-## What This Example Shows
+**Full lesson: [lab.pollack.ai/docs/agent-client/tutorial/01-first-task](https://lab.pollack.ai/docs/agent-client/tutorial/01-first-task)**
 
-- Spring Boot auto-configuration selects the agent provider based on classpath
-- Portable `AgentClient.Builder` API works identically across providers
-- No provider-specific imports in Java code
-
-## Running
+## Run
 
 ```bash
 # Claude (default)
@@ -21,21 +17,17 @@ The simplest possible AgentClient task — create a file — demonstrated with a
 ./mvnw spring-boot:run -pl 01-create-file -Dspring.profiles.active=gemini
 ```
 
-## Expected Output
+## Verify
 
-```
-: Starting Spring Agent demo...
-: Working directory: /path/to/01-create-file
-: Executing goal: Create a file named hello.txt with the content 'Hello from Spring AI Agent Client!'
-: Goal completed successfully!
-: Verified: hello.txt contains: Hello from Spring AI Agent Client!
+```bash
+cat hello.txt
+# Hello from Spring AI Agent Client!
 ```
 
-## Configuration
+## What This Shows
 
-See the profile-specific YAML files in `src/main/resources/`:
-- `application-claude.yml` — Claude Code settings
-- `application-codex.yml` — Codex settings
-- `application-gemini.yml` — Gemini settings
+- Spring Boot auto-configuration selects the provider based on classpath
+- Portable `AgentClient.Builder` API works identically across providers
+- No provider-specific imports in application code
 
-For more on how defaults work across providers, see [Defaults Philosophy](https://springaicommunity.mintlify.app/agent-client/defaults-philosophy).
+See `src/main/resources/application-*.yml` for provider-specific configuration.
