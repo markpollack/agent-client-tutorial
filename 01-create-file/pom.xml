@@ -7,14 +7,14 @@
     <parent>
         <groupId>io.github.markpollack.tutorial</groupId>
         <artifactId>agent-client-tutorial</artifactId>
-        <version>0.14.0-SNAPSHOT</version>
+        <version>0.32.0</version>
     </parent>
 
     <artifactId>01-create-file</artifactId>
     <packaging>jar</packaging>
 
     <name>Tutorial 01 - Create File</name>
-    <description>Simplest agent task: create a file with all three providers</description>
+    <description>Simplest agent task: create a file with both providers</description>
 
     <profiles>
         <profile>
@@ -36,16 +36,6 @@
                 <dependency>
                     <groupId>io.github.markpollack</groupId>
                     <artifactId>agent-starter-codex</artifactId>
-                    <version>${agent-client.version}</version>
-                </dependency>
-            </dependencies>
-        </profile>
-        <profile>
-            <id>gemini</id>
-            <dependencies>
-                <dependency>
-                    <groupId>io.github.markpollack</groupId>
-                    <artifactId>agent-starter-gemini</artifactId>
                     <version>${agent-client.version}</version>
                 </dependency>
             </dependencies>

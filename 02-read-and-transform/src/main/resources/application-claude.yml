@@ -1,6 +1,4 @@
-spring:
-  ai:
-    agents:
-      claude-code:
-        model: claude-sonnet-4-5
-        yolo: true
+agent-client:
+  claude:
+    model: claude-sonnet-4-5
+    yolo: true

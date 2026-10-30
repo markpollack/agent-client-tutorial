@@ -1,7 +1,5 @@
 # OpenAI Codex — requires: OPENAI_API_KEY env var
-spring:
-  ai:
-    agents:
-      codex:
-        model: gpt-5-codex
-        timeout: PT3M
+agent-client:
+  codex:
+    model: gpt-5.4-mini
+    timeout: PT3M

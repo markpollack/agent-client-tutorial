@@ -6,8 +6,8 @@ import java.nio.file.Path;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import io.github.markpollack.client.AgentClient;
-import io.github.markpollack.client.AgentClientResponse;
+import io.github.markpollack.agents.client.AgentClient;
+import io.github.markpollack.agents.client.AgentClientResponse;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
  * Tutorial 01: Create a file using whichever agent provider is on the classpath.
  *
  * This uses only the portable AgentClient.Builder API. The provider is selected by the
- * Maven profile (claude, codex, or gemini) which controls which starter JAR is on the
+ * Maven profile (claude or codex) which controls which starter JAR is on the
  * classpath. Spring Boot auto-configuration does the rest.
  */
 @Component
@@ -34,7 +34,7 @@ public class CreateFileRunner implements CommandLineRunner {
 		log.info("Starting Spring Agent demo...");
 
 		Path workingDir = Path.of(System.getProperty("user.dir"));
-		String goal = "Create a file named hello.txt with the content 'Hello from Spring AI Agent Client!'";
+		String goal = "Create a file named hello.txt with the content 'Hello from Agent Client!'";
 
 		log.info("Working directory: {}", workingDir);
 		log.info("Executing goal: {}", goal);

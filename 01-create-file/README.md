@@ -1,6 +1,6 @@
 # Tutorial 01: Create a File
 
-The simplest possible AgentClient task — create a file — demonstrated with all three providers.
+The simplest possible AgentClient task — create a file — demonstrated with Claude Code and Codex.
 
 **Full lesson: [lab.pollack.ai/docs/agent-client/tutorial/01-first-task](https://lab.pollack.ai/docs/agent-client/tutorial/01-first-task)**
 
@@ -13,15 +13,13 @@ The simplest possible AgentClient task — create a file — demonstrated with a
 # Codex
 ./mvnw spring-boot:run -pl 01-create-file -Dspring.profiles.active=codex
 
-# Gemini
-./mvnw spring-boot:run -pl 01-create-file -Dspring.profiles.active=gemini
 ```
 
 ## Verify
 
 ```bash
 cat hello.txt
-# Hello from Spring AI Agent Client!
+# Hello from Agent Client!
 ```
 
 ## What This Shows

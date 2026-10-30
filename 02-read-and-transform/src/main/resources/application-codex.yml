@@ -1,5 +1,3 @@
-spring:
-  ai:
-    agents:
-      codex:
-        model: gpt-5.4-mini
+agent-client:
+  codex:
+    model: gpt-5.4-mini

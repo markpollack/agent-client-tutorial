@@ -1,6 +1,6 @@
 # Tutorial Examples CI
-# Runs examples across all three providers on a MWF schedule
-# Cost estimate: 3 examples x 3 providers x 12 runs/month = ~$10-15/month
+# Runs examples across both providers on a MWF schedule
+# Cost estimate: 3 examples x 2 providers x 12 runs/month = ~$7-10/month
 # Ceiling: $50/month — re-estimate when examples 04+ added
 
 name: Tutorial Examples
@@ -31,18 +31,16 @@ jobs:
             cli-install: npm install -g @anthropic-ai/claude-code
           - name: codex
             cli-install: npm install -g @openai/codex
-          - name: gemini
-            cli-install: npm install -g @anthropic-ai/gemini-cli
 
     name: ${{ matrix.example }} / ${{ matrix.provider.name }}
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up JDK 17
+      - name: Set up JDK 21
         uses: actions/setup-java@v4
         with:
-          java-version: '17'
+          java-version: '21'
           distribution: 'temurin'
           cache: 'maven'
 
@@ -66,8 +64,6 @@ jobs:
       #   env:
       #     ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       #     OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-      #     GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-      #     GOOGLE_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       #   run: |
       #     ./mvnw spring-boot:run -pl ${{ matrix.example }} \
       #       -Dspring.profiles.active=${{ matrix.provider.name }} \
