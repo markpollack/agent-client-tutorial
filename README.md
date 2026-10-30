@@ -34,7 +34,7 @@ cd agent-client-tutorial
 | Provider | Install | Auth |
 |----------|---------|------|
 | Claude Code | `npm install -g @anthropic-ai/claude-code` | `claude auth login` |
-| OpenAI Codex | `npm install -g @openai/codex` | Set `OPENAI_API_KEY` |
+| OpenAI Codex | `npm install -g @openai/codex` | Set `OPENAI_API_KEY` (with `codex login` instead, set a model your account supports: `--agent-client.codex.model=<model>`) |
 
 ## Documentation
 

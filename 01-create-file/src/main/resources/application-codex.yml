@@ -1,4 +1,6 @@
 # OpenAI Codex — requires: OPENAI_API_KEY env var
+# Signed in to Codex with a ChatGPT account instead of an API key? Set a model your account
+# supports, e.g. --agent-client.codex.model=<model>.
 agent-client:
   codex:
     model: gpt-5.4-mini
