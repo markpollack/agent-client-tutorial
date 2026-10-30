@@ -56,7 +56,7 @@ jobs:
       - name: Compile example
         run: |
           ./mvnw compile -pl ${{ matrix.example }} \
-            -P${{ matrix.provider.name }} -P'!claude' \
+            -P${{ matrix.provider.name }} \
             -B --no-transfer-progress
 
       # Runtime test commented out until secrets are configured
